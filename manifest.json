@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "UI for LoL",
+  "version": "0.1.0",
+  "description": "This Extension removes some annoying parts of the website for a better view experience.",
+  "content_scripts": [
+    {
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "https://watch.euw.lolesports.com/*",
+        "https://watch.na.lolesports.com/*",
+        "https://watch.lck.lolesports.com/*",
+        "https: //watch.eune.lolesports.com/*",
+        "https://watch.ru.lolesports.com/*",
+        "https: //watch.las.lolesports.com/*"
+      ]
+    }
+  ]
+}
